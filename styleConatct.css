@@ -1,0 +1,102 @@
+.contact-box {
+    margin-top: 200px;
+
+}
+
+.contact-box .container {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: column; 
+}
+.contact-box .container h2 {
+    margin-bottom: 40px;
+}
+
+.contact-box .container input,
+.contact-box .container textarea {
+    outline: none;
+    background-color: rgb(221, 221, 221) ;
+    border-radius: 5px;
+    border: 1px rgb(221, 221, 221) solid;
+    padding: 15px;
+}
+
+.contact {
+    display: grid;
+    /* background-color: yellow; */
+    
+    width: 80%;
+    padding: 10px;
+    
+}
+
+.full-name-box{
+    /* background-color: red; */
+
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 10px;
+   
+    
+}
+.full-name-box,
+.email-box,
+.message-box {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 10px;
+
+    padding: 10px;
+    
+}
+
+.full-name-box label {
+    grid-column: 1/3;
+    /* text-align: center; */
+}
+
+.first-name,
+.email,
+.message  {
+    grid-column: 3/6;
+}
+
+.last-name {
+    grid-column: 6/11;
+    
+}
+
+
+.email,
+.message {
+    grid-column: 3/11;
+    
+}
+
+.message-box {
+    /* background-color: green; */
+    position: relative;
+}
+
+.message-box label {
+    position: absolute;
+    left: 0;
+    padding-left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.message {
+    height: 200px;
+}
+
+
+@media (max-width : "400px"){
+
+    .container {
+        flex-direction: column;
+    }
+
+    
+}
+
